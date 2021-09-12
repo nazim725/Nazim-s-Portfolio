@@ -100,7 +100,7 @@ const showDetails5=()=>{
 <h1 class="website-title">Baper Bank</h1>
 <h3 class="description">This Website is build by Using HTML,CSS,Bootstrap,Javascript</h4>
 <div class="button-div">
-<p>User Name: Nazim  || Password:12345</p>
+<p style="color:white; margin-left:50px">User Name: Nazim  || Password:12345</p>
 
 <button class="display-button"><a target="_blank" href="https://nazim725.github.io/BaperBank-JS/Login.htmll">Live Site Link</a></button>
 <button class="display-button"><a target="_blank" href="https://github.com/nazim725/BaperBank-JS">Github Code Link</a></button>

@@ -285,6 +285,7 @@ header .navbar ul li a:hover{
     margin:2rem;
     overflow: hidden;
     cursor: pointer;
+    box-shadow: 12px 12px 2px 1px rgba(215, 215, 233, 0.2);
 }
 
 .portfolio .box-container .box img{
@@ -297,15 +298,21 @@ header .navbar ul li a:hover{
     transform: scale(1.2);
 }
 .display{
-    background-color: aliceblue; 
+    background-color: rgb(23, 50, 73); 
     width: 500px;
     margin-left: 320px;
     border-radius: 15px;
+    box-shadow: 12px 12px 2px 1px rgba(215, 215, 233, 0.2);
 }
 .website-title,.description{
     text-align: center;
+    
+    color: white;
     padding: 3px;
     
+}
+.website-title{
+    font-size: 20px;
 }
 .display-button{
     margin: 5px;
