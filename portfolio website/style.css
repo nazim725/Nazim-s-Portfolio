@@ -321,6 +321,9 @@ header .navbar ul li a:hover{
     
     border-radius: 5px;
 }
+.display-button:hover{
+    background-color: darkorange;
+}
 .display-button a{
     color: white;
     font-weight: bold;
@@ -330,7 +333,7 @@ header .navbar ul li a:hover{
     
 }
 .show-details{
-    padding: 3px;
+    padding: 10px;
 }
 
 .contact .row{
