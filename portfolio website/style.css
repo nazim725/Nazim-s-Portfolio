@@ -393,13 +393,11 @@ header .navbar ul li a:hover{
     color:var(--yellow);
 }
 .social-connection{
-    background-color: rgb(161, 133, 133);
     display: flex;
-    border-radius: 10px;
     
 }
-.icons{
-    
+.icons a i{
+    color: rgb(236, 233, 224);
     font-size:50px;
     padding: 5px;
     margin: 5px;
