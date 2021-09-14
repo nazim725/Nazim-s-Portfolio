@@ -144,3 +144,55 @@ const showDetails7=()=>{
   details.appendChild(div)
 
 }
+const showDetails8=()=>{
+  const details= document.getElementById('display-details');
+  details.textContent='';
+  const div=document.createElement('div');
+  div.classList.add('show-details')
+  div.innerHTML=`
+<h1 class="website-title">Honda CRb</h1>
+<h3 class="description">This Website is build by Using HTML,CSS,Bootstrap</h4>
+<div class="button-div">
+<button class="display-button"><a target="_blank" href="https://nazim725.github.io/Honda-crb/">Live Site Link</a></button>
+<button class="display-button"><a target="_blank" href="https://github.com/nazim725/Honda-crb">Github Code Link</a></button>
+</div>
+
+  `;
+  details.appendChild(div)
+
+}
+const showDetails9=()=>{
+  const details= document.getElementById('display-details');
+  details.textContent='';
+  const div=document.createElement('div');
+  div.classList.add('show-details')
+  div.innerHTML=`
+<h1 class="website-title">Book Archive</h1>
+<h3 class="description">This Website is build by Using HTML,CSS,Bootstrap,javaScript,API</h4>
+<div class="button-div">
+<button class="display-button"><a target="_blank" href="https://nazim725.github.io/Book-Archive/">Live Site Link</a></button>
+<button class="display-button"><a target="_blank" href="https://github.com/nazim725/Book-Archive">Github Code Link</a></button>
+</div>
+
+  `;
+  details.appendChild(div)
+
+}
+const showDetails10=()=>{
+  const details= document.getElementById('display-details');
+  details.textContent='';
+  const div=document.createElement('div');
+  div.classList.add('show-details')
+  div.innerHTML=`
+<h1 class="website-title"> Mac Book Pro</h1>
+<h3 class="description">This Website is build by Using HTML,CSS,Bootstrap,javaScript,ES6</h4>
+<p style="color:white; margin-left:180px"> Promo Code : stevekaku</p>
+<div class="button-div">
+<button class="display-button"><a target="_blank" href="https://nazim725.github.io/Mac-Book-pro/">Live Site Link</a></button>
+<button class="display-button"><a target="_blank" href="https://github.com/nazim725/Mac-Book-pro">Github Code Link</a></button>
+</div>
+
+  `;
+  details.appendChild(div)
+
+}
