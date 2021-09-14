@@ -196,3 +196,20 @@ const showDetails10=()=>{
   details.appendChild(div)
 
 }
+const showDetails11=()=>{
+  const details= document.getElementById('display-details');
+  details.textContent='';
+  const div=document.createElement('div');
+  div.classList.add('show-details')
+  div.innerHTML=`
+<h1 class="website-title"> Simple Calculator</h1>
+<h3 class="description">This Calculator is build by Using HTML,CSS,Bootstrap,javaScript</h4>
+<div class="button-div">
+<button class="display-button"><a target="_blank" href="https://nazim725.github.io/Simple-Calculator/">Live Site Link</a></button>
+<button class="display-button"><a target="_blank" href="https://github.com/nazim725/Simple-Calculator">Github Code Link</a></button>
+</div>
+
+  `;
+  details.appendChild(div)
+
+}
