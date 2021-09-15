@@ -214,7 +214,7 @@ const showDetails11=()=>{
 
 }
 
-
+// send email from contact form 
 function sendmail(){
     
   var name = $('#Name').val();
@@ -223,30 +223,24 @@ function sendmail(){
   var message = $('#Message').val();
   var Body='Name: '+name+'<br>Email: '+email+'<br>Project: '+project+'<br>Message: '+message;
 
+  const errorMessage=document.getElementById('display-message');
+  errorMessage.style.padding="8px"
   if(!name){
-    const errorMessage=document.getElementById('display-message');
-    errorMessage.style.padding="8px"
     errorMessage.innerText='Name is missing';
     return;
   }
   if(!email)
   {
-    const errorMessage=document.getElementById('display-message');
-    errorMessage.style.padding="8px"
     errorMessage.innerText='Email is missing';
     return;
   }
   if(!project)
   {
-    const errorMessage=document.getElementById('display-message');
-    errorMessage.style.padding="8px"
     errorMessage.innerText='Projects is missing';
     return;
   }
   if(!message)
   {
-    const errorMessage=document.getElementById('display-message');
-    errorMessage.style.padding="8px"
     errorMessage.innerText='You must Provide your Message';
     return;
   }
@@ -264,16 +258,10 @@ function sendmail(){
       errorMessage.style.padding="8px"
       
       if(message=='OK'){
-      // alert('Your mail has been send. Thank you for connecting.');
-      
         errorMessage.innerText='Your mail has been send. Thank you for connecting.';
-      
       }
       else{
-       
-        // alert('There is error at sending message. ')
         errorMessage.innerText='There is error at sending message';
-        
       }
 
     }
