@@ -300,7 +300,7 @@ header .navbar ul li a:hover{
 .display{
     background-color: rgb(23, 50, 73); 
     width: 500px;
-    margin-left: 320px;
+    margin-left: 280px;
     border-radius: 15px;
     box-shadow: 12px 12px 2px 1px rgba(215, 215, 233, 0.2);
 }
@@ -318,7 +318,6 @@ header .navbar ul li a:hover{
     margin: 5px;
     background-color: steelblue;
     padding: 10px;
-    
     border-radius: 5px;
 }
 .display-button:hover{
@@ -330,6 +329,7 @@ header .navbar ul li a:hover{
 }
 .button-div{
     margin-left: 130px;
+    display: flex;
     
 }
 .show-details{
@@ -499,8 +499,10 @@ header .navbar ul li a:hover{
     }
     .display{
         width: 600px;
-        margin-left:80px;
-        
+        margin-left:80px;  
+    }
+    .button-div{
+        margin-left: 170px;
     }
     
 }
@@ -533,12 +535,16 @@ header .navbar ul li a:hover{
     .display{
         width: 350px;
         margin-left:0px;
-        
     }
     .btn-cv{
         margin-left: 50px;
     }
+    .button-div{
+        margin-left: 40px;
+    }
+    
 }
+
 @media (max-width:600px){
     
     header{
@@ -571,5 +577,8 @@ header .navbar ul li a:hover{
     }
     .btn-cv{
         margin-left: 50px;
+    }
+    .button-div{
+        margin-left: 40px;
     }
 }
