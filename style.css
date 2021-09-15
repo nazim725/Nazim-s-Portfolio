@@ -405,6 +405,13 @@ header .navbar ul li a:hover{
     padding: 5px;
     margin: 5px;
 }
+#display-message{
+    background-color: cadetblue;
+    margin-top: 10px;
+    color: white;
+    font-size: 20px;
+    
+}
 
 
 

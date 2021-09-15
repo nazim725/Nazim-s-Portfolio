@@ -213,3 +213,73 @@ const showDetails11=()=>{
   details.appendChild(div)
 
 }
+
+
+function sendmail(){
+    
+  var name = $('#Name').val();
+  var email = $('#Email').val();
+  var project = $('#Project').val();
+  var message = $('#Message').val();
+  var Body='Name: '+name+'<br>Email: '+email+'<br>Project: '+project+'<br>Message: '+message;
+
+  if(!name){
+    const errorMessage=document.getElementById('display-message');
+    errorMessage.style.padding="8px"
+    errorMessage.innerText='Name is missing';
+    return;
+  }
+  if(!email)
+  {
+    const errorMessage=document.getElementById('display-message');
+    errorMessage.style.padding="8px"
+    errorMessage.innerText='Email is missing';
+    return;
+  }
+  if(!project)
+  {
+    const errorMessage=document.getElementById('display-message');
+    errorMessage.style.padding="8px"
+    errorMessage.innerText='Projects is missing';
+    return;
+  }
+  if(!message)
+  {
+    const errorMessage=document.getElementById('display-message');
+    errorMessage.style.padding="8px"
+    errorMessage.innerText='You must Provide your Message';
+    return;
+  }
+  Email.send({
+  
+    SecureToken:"fbf31702-bb7f-4a4e-9c1c-4ccf17ee777f",
+    // SecureToken="20b444a2-b3af-4eb8-bae7-911f6097521c",
+    To: 'nazimhabib77@gmail.com',
+    From: "c161067@ugrad.iiuc.ac.bd",
+    Subject: "New message on contact from "+name,
+    Body: Body
+  }).then(
+    message =>{
+      const errorMessage=document.getElementById('display-message');
+      errorMessage.style.padding="8px"
+      
+      if(message=='OK'){
+      // alert('Your mail has been send. Thank you for connecting.');
+      
+        errorMessage.innerText='Your mail has been send. Thank you for connecting.';
+      
+      }
+      else{
+       
+        // alert('There is error at sending message. ')
+        errorMessage.innerText='There is error at sending message';
+        
+      }
+
+    }
+  );
+ 
+
+
+
+}

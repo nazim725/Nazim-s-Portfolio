@@ -179,7 +179,7 @@
                 <img onclick="showDetails7()" src="images/Gorur Hat.jpeg" alt="">
             </div>
             <div class="box">
-                <img onclick="showDetails8()" src="images/bike-1.png" alt="">
+                <img onclick="sho   wDetails8()" src="images/bike-1.png" alt="">
             </div>
             <div class="box">
                 <img onclick="showDetails9()" src="images/book archive.jpeg" alt="">
@@ -287,15 +287,17 @@
                 
             </div>
             
-            <form action="">
+            <form action="javascript:sendmail()" method="POST">
                 
-                <input type="text" placeholder="name" class="box">
-                <input type="email" placeholder="email" class="box">
-                <input type="text" placeholder="project" class="box">
-                <textarea name="" id="" cols="30" rows="10" class="box message" placeholder="message"></textarea>
+                <input type="text" placeholder="name" class="box" name="Name" id="Name">
+                <input type="email" placeholder="email" class="box" name="Email" id="Email">
+                <input type="text" placeholder="project" class="box" name="Project" id="Project">
+                <textarea name="" id="Message" cols="30" rows="10" class="box message" placeholder="message" name="Message" ></textarea>
                 <button type="submit" class="btn"> send <i class="fas fa-paper-plane"></i> </button>
-                
+                <div class="" id="display-message"></div>
             </form>
+
+           
             
         </div>
         
@@ -308,6 +310,10 @@
     
     <!-- custom js file link  -->
     <script src="script.js"></script>
+    <!-- jquery cdn -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
     
     
 </body>
